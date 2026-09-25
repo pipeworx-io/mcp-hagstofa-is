@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/hagstofa-is",
   "title": "Hagstofa Is",
   "description": "Statistics Iceland (Hagstofa Íslands) PxWeb MCP. Keyless.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/hagstofa-is",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-hagstofa-is",
