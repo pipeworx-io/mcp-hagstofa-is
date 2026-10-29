@@ -1,0 +1,51 @@
+[
+  {
+    "name": "subjects",
+    "description": "Navigate the database/subject tree. Root lists databases; sub-paths list folders (type \"l\") and tables (type \"t\", id ends in \".px\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Sub-path under the English PxWeb root (default empty = root). e.g. \"Ibuar/mannfjoldi/1_yfirlit/yfirlit_mannfjolda\""
+        }
+      }
+    }
+  },
+  {
+    "name": "table_meta",
+    "description": "Table definition (dimensions, valid values). Path must include the \".px\" table suffix.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "e.g. \"Ibuar/mannfjoldi/1_yfirlit/yfirlit_mannfjolda/MAN00000.px\""
+        }
+      },
+      "required": [
+        "path"
+      ]
+    }
+  },
+  {
+    "name": "query_table",
+    "description": "Pull data from a table (path includes the \".px\" suffix). body is a PxWeb query object. PxWeb limits request size — filter dimensions to keep the cell count small.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "body": {
+          "type": "object",
+          "description": "{query: [{code, selection: {filter, values}}], response: {format: \"json-stat2\"}}"
+        }
+      },
+      "required": [
+        "path",
+        "body"
+      ]
+    }
+  }
+]
