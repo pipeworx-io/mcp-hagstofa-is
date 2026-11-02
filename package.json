@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-hagstofa-is",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Statistics Iceland (Hagstofa Íslands) PxWeb MCP. Keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "hagstofa-is",
     "gatewaySlug": "hagstofa-is",
-    "sourceHash": "v1-a7844fad1e122f5fb6eba364030c81bbbcc893f9ab462e3249a2abb2f88596e8",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-ffd45a741c3a2d1a593713947af3a189767d45bcdb4c42d0c4b493db8dd7c171",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
